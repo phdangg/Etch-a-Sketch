@@ -6,10 +6,20 @@ body{
 }
 .main-container{
     display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.input-button{
+    align-self: center;
 }
 .square-container{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    max-width: 850px;
+    width: 960px;
+    height: 960px;
+    min-width: 960px;
+    border: 1px solid black;
+}
+.square{
+   
 }
