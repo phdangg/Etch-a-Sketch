@@ -9,7 +9,14 @@ for (let i = 0;i<NUMBER_OF_SQUARE;i++){
     squareDiv.style.height = "50px";
     squareDiv.style.width = "50px";
     squareDiv.style.border = "1px solid black";
+    squareDiv.className = 'square';
     squareContainer.appendChild(squareDiv);
 }
-
 mainContainer.appendChild(squareContainer);
+
+const squares = document.querySelectorAll('.square');
+squares.forEach(square =>{
+    square.addEventListener('mouseenter',()=>{
+        square.style.background='red';
+    })
+});
